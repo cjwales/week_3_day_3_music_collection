@@ -26,6 +26,7 @@ album1.name = 'MM Food Reloaded'
 album1.update()
 album1.save()
 
+
 album2 = Album.new({
   'name' => 'madvilliany',
   'genre' => 'Hip-Hop',
@@ -33,6 +34,9 @@ album2 = Album.new({
   })
 
 album2.save()
+
+album1.delete()
+# artist1.delete()
 
 artist_for_album = album1.artist()
 artist1_albums = artist1.list_albums()
