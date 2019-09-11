@@ -7,6 +7,8 @@ artist1 = Artist.new({
   })
 
 artist1.save()
+artist1.name = "MF Doom Reloaded"
+artist1.update()
 
 artist2 = Artist.new({
   'name' => 'Radiohead'
@@ -20,6 +22,8 @@ album1 = Album.new({
   'artist_id' => artist1.id
   })
 
+album1.name = 'MM Food Reloaded'
+album1.update()
 album1.save()
 
 album2 = Album.new({
