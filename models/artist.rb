@@ -25,4 +25,11 @@ attr_accessor :name
     return results.map { |result| Artist.new(result)}
   end
 
+  def list_albums()
+    sql = "SELECT * FROM albums WHERE artist_id = $1"
+    values = [@id]
+    results = SqlRunner.run(sql, values)
+    return results.map {|result| Album.new(result)}
+  end
+
 end

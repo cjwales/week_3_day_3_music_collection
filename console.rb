@@ -22,7 +22,15 @@ album1 = Album.new({
 
 album1.save()
 
+album2 = Album.new({
+  'name' => 'madvilliany',
+  'genre' => 'Hip-Hop',
+  'artist_id' => artist1.id
+  })
 
+album2.save()
+
+artist1_albums = artist1.list_albums()
 artists = Artist.all()
 albums = Album.all()
 binding.pry
