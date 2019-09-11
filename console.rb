@@ -30,6 +30,7 @@ album2 = Album.new({
 
 album2.save()
 
+artist_for_album = album1.artist()
 artist1_albums = artist1.list_albums()
 artists = Artist.all()
 albums = Album.all()

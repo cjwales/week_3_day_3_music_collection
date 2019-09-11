@@ -32,4 +32,5 @@ attr_accessor :name
     return results.map {|result| Album.new(result)}
   end
 
+
 end
